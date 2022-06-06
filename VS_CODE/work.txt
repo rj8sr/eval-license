@@ -1,0 +1,28 @@
+   @Test
+    void deleteClaimant() {
+        Claimant claimant = new Claimant();
+        claimant.setPersonId(new BigDecimal(1));
+        claimant.setFirstName("Testing Delete Claimant");
+        Mockito.when(claimantRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(claimant));
+      Long claimantId = claimant.getPersonId().longValue();
+        claimantService.deleteClaimant(claimantId);
+        Mockito.verify(claimantRepository).delete(claimant);
+    }
+
+
+    
+    @Test
+    void getClaimantByclaimantId() {
+//        Mockito.when(claimantRepository.findById(ArgumentMatchers.anyLong())).thenThrow==(()->new NullPointerException());
+//       Assert.assertEquals("", Optional.of(1L),claimantService.getClaimantByclaimantId(1L).getClaimantKey());
+
+
+       Mockito.when(modelMapper.map(Mockito.any(),Mockito.any())).thenReturn(creationDto);
+
+        creationDto.setPersonId(new BigDecimal(1));
+        creationDto.setFirstName("Testing First Name");
+
+        Mockito.when(claimantRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(claimantModel));
+       ClaimantDto result = claimantService.getClaimantByclaimantId(1L);
+       assertEquals("Testing First Name",result.getFirstName());
+       }

@@ -1,0 +1,44 @@
+
+  { 
+     "contact":{
+    "email_address":"jebaraj.h@gmail.com",
+    "phone_number":"555-666-7788",
+    "street_address":[
+       "mathilda avenue"
+    ],
+    "city":"Fremont",
+    "state":"California"
+ },
+ "identity":{
+    "given_name":"Jeba",
+    "family_name":"Jeba",
+    "date_of_birth":"1990-01-01",
+    "country_of_tax_residence":"United States",
+    "funding_source":[
+       "employment_income"
+    ]
+ },
+ "disclosures":{
+    "is_control_person":false,
+    "is_affiliated_exchange_or_finra":false,
+    "is_politically_exposed":false,
+    "immediate_family_exposed":false
+ },
+ "agreements":[
+    {
+       "agreement":"margin_agreement",
+       "signed_at":"2021-07-27T15:19:57Z",
+       "ip_address":"0:0:0:0:0:0:0:1"
+    },
+    {
+       "agreement":"account_agreement",
+       "signed_at":"2021-07-27T15:19:57Z",
+       "ip_address":"0:0:0:0:0:0:0:1"
+    },
+    {
+       "agreement":"customer_agreement",
+       "signed_at":"2021-07-27T15:19:57Z",
+       "ip_address":"0:0:0:0:0:0:0:1"
+    }
+ ]
+}

@@ -1,0 +1,383 @@
+GET http://localhost:8080/way-stock-rewards/v1/trading/account/details: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 62442
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "abe447dd-96cf-4bf7-99d6-6037caafe969",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "1254",
+    "date": "Thu, 05 Aug 2021 14:23:03 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully fetched account details\",\"accountDetails\":{\"id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"account_number\":\"941061959\",\"status\":\"ACTIVE\",\"currency\":\"USD\",\"buying_power\":\"162.65\",\"regt_buying_power\":\"162.65\",\"daytrading_buying_power\":\"0\",\"non_marginable_buying_power\":\"162.65\",\"cash\":\"162.65\",\"cash_withdrawable\":\"0\",\"cash_transferable\":\"0\",\"pending_transfer_out\":\"0\",\"pending_transfer_in\":\"0\",\"portfolio_value\":\"412.737\",\"pattern_day_trader\":\"false\",\"trading_blocked\":\"false\",\"transfers_blocked\":\"false\",\"account_blocked\":\"false\",\"created_at\":\"2021-07-14T15:49:41.213716Z\",\"trade_suspended_by_user\":\"false\",\"multiplier\":\"1\",\"shorting_enabled\":\"false\",\"equity\":\"412.737\",\"last_equity\":\"383.075\",\"long_market_value\":\"250.087\",\"short_market_value\":\"0\",\"initial_margin\":\"250.087\",\"maintenance_margin\":\"75.0261\",\"last_maintenance_margin\":\"66.1275\",\"sma\":\"273.0504448022155427675\",\"daytrade_count\":\"0\",\"previous_close\":\"2021-08-04T19:00:00-04:00\",\"last_long_market_value\":\"220.425\",\"last_short_market_value\":\"0\",\"last_cash\":\"162.65\",\"last_initial_margin\":\"220.425\",\"last_regt_buying_power\":\"162.65\",\"last_daytrading_buying_power\":\"0\",\"last_buying_power\":\"162.65\",\"last_daytrade_count\":\"0\",\"clearing_broker\":\"VELOX\"}}"
+}
+GET http://localhost:8080/way-stock-rewards/v1/trading/account/order/details: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 62442
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "7054e7a1-05f9-4e83-b9e9-f3234d73cc26",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "1076",
+    "date": "Thu, 05 Aug 2021 14:23:37 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully fetched order details\",\"orderDetails\":[{\"id\":\"a92e7cc2-7234-4c16-8e52-b0520d13d39b\",\"client_order_id\":\"2dd0873c-8a64-4834-84c1-4be1a5a9cf5d\",\"created_at\":\"2021-08-03T17:05:31.056566Z\",\"updated_at\":\"2021-08-03T17:05:31.086098Z\",\"submitted_at\":\"2021-08-03T17:05:31.051858Z\",\"filled_at\":\"2021-08-03T17:05:31.063713Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"0.1\",\"filled_qty\":\"0.1\",\"filled_avg_price\":\"147.9\",\"type\":\"market\",\"side\":\"sell\",\"time_in_force\":\"day\",\"status\":\"filled\"},{\"id\":\"34c18a62-b30e-425c-9659-bb6c3e819301\",\"client_order_id\":\"be8b633b-f6de-4619-8080-0d66c056574d\",\"created_at\":\"2021-08-03T17:05:05.237664Z\",\"updated_at\":\"2021-08-03T17:05:05.317261Z\",\"submitted_at\":\"2021-08-03T17:05:05.230459Z\",\"filled_at\":\"2021-08-03T17:05:05.308518Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"1\",\"filled_qty\":\"1\",\"filled_avg_price\":\"147.86\",\"type\":\"market\",\"side\":\"sell\",\"time_in_force\":\"day\",\"status\":\"filled\"}]}"
+}
+GET http://localhost:8080/way-stock-rewards/v1/trading/account/activity/details: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 62442
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "ce67ad84-fa7a-4fd2-afea-a1004333db2c",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "5188",
+    "date": "Thu, 05 Aug 2021 14:23:45 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully fetched activity details\",\"activityDetails\":[{\"id\":\"20210805000000000::12d8901d-2995-4d73-b5fc-aae528f242ef\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-05\",\"net_amount\":\"0\",\"description\":\"ID: fa4b17f8-0c28-4d1f-bac5-a286ab6e222c - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.38\",\"status\":\"executed\"},{\"id\":\"20210805000000000::04e5478c-2fb9-4134-884e-945569a697b2\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-05\",\"net_amount\":\"0\",\"description\":\"ID: 94cbb559-ae8f-4473-a447-e6381e51618d - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.38\",\"status\":\"executed\"},{\"id\":\"20210804000000000::757ff5df-0944-4be2-abf3-29a710554dba\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-04\",\"net_amount\":\"0\",\"description\":\"ID: 88dcefd9-b7b6-4429-8e73-7429e5b21df5 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.83\",\"status\":\"executed\"},{\"id\":\"20210804000000000::73f4d3ac-7b86-40de-8c31-73f4e432a37c\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-04\",\"net_amount\":\"0\",\"description\":\"ID: fcd167e1-301e-47f5-b75b-8dec7d87e7a2 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210804000000000::50e95fd9-8bd7-4031-a470-e73bdf24c658\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-04\",\"net_amount\":\"0\",\"description\":\"ID: a65a6bed-d1c5-40bd-a480-52b5bc12dd0a - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210804000000000::49216248-2970-4ea4-9c99-2f36876d5277\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-04\",\"net_amount\":\"0\",\"description\":\"ID: e60c13a8-3de7-4bda-9a0f-4be28005f1b5 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"146.97\",\"status\":\"executed\"},{\"id\":\"20210804000000000::155bad9e-a238-4377-8c5b-bd25849dc665\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-04\",\"net_amount\":\"0\",\"description\":\"ID: d4febe18-cc5b-447f-95f9-3fa5bd1ee9ba - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803130531063::655c7e58-2a6d-46cc-ad1e-7a5835071065\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"FILL\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\"},{\"id\":\"20210803130505308::fd413cd0-137c-4f5e-a380-547e52ead274\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"FILL\",\"symbol\":\"AAPL\",\"qty\":\"1\",\"price\":\"147.86\"},{\"id\":\"20210803000000000::9ec5ccc4-88dc-4dec-bf4c-046245f9b8c0\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: 871e6a7e-d0b0-48c5-ae28-fa9c4228a1f7 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803000000000::969ed250-1f0f-468d-a92b-b74ecfc10c6e\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: 32f760ce-3cef-4d89-8e74-aca3d862d523 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.5\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803000000000::78987d9c-3e78-431c-9004-01ab6bb87d99\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: b55bde6f-9189-479e-b8b0-0fc9f09818c8 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803000000000::591176dd-641b-4153-ae9c-5a9d6d864239\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: ae8929a7-95f8-4456-9abd-23242dc31776 - Test Journal1\",\"symbol\":\"AAPL\",\"qty\":\"0.5\",\"price\":\"145.86\",\"status\":\"executed\"},{\"id\":\"20210803000000000::54276792-c6dc-43cf-a724-ff8c09305b0d\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: ffce4780-baeb-4ca7-8646-e37c86a2e5e1 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803000000000::2b54e164-263a-4996-91eb-6aec36ab7327\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: 2eee50a9-5bfd-40f8-80fa-a272e683ad70 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210803000000000::051e5d5a-ab13-4cf7-a59a-6808c5ab990f\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-08-03\",\"net_amount\":\"0\",\"description\":\"ID: a4b5d222-40e3-477c-a11c-d7c14faae227 - Test Journal24\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.9\",\"status\":\"executed\"},{\"id\":\"20210721000000000::52e9945c-a2dd-4169-8390-9c6eace3fdd1\",\"account_id\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"activity_type\":\"JNLS\",\"date\":\"2021-07-21\",\"net_amount\":\"0\",\"description\":\"ID: e5456ef2-03ae-4906-b777-fb611f573bef - Test Journal\",\"symbol\":\"AAPL\",\"qty\":\"0.6\",\"price\":\"148.33\",\"status\":\"executed\"}]}"
+}
+GET http://localhost:8080/way-stock-rewards/v1/trading/account/position/details: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 62442
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "6282bf39-f8bb-43fa-b247-b94b1094cb40",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "606",
+    "date": "Thu, 05 Aug 2021 14:24:01 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully fetched position details\",\"positionDetails\":[{\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"exchange\":\"NASDAQ\",\"asset_class\":\"us_equity\",\"asset_marginable\":\"true\",\"qty\":\"1.7\",\"avg_entry_price\":\"147.7843124627686726\",\"side\":\"long\",\"market_value\":\"250.07\",\"cost_basis\":\"251.23333118670674339\",\"unrealized_pl\":\"-1.16333118670674339\",\"unrealized_plpc\":\"-0.0046304810799257\",\"unrealized_intraday_pl\":\"0.169\",\"unrealized_intraday_plpc\":\"0.0006762678020496\",\"current_price\":\"147.1\",\"lastday_price\":\"146.95\",\"change_today\":\"0.0010207553589656\"}]}"
+}
+POST http://localhost:8080/way-stock-rewards/v1/trading/account/register/user: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 62442
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "1be77a2e-968a-4807-814d-1f7b1bb41261",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "751"
+  },
+  "Request Body": "\r\n  { \r\n     \"contact\":{\r\n    \"phone_number\":\"555-666-7788\",\r\n    \"street_address\":[\r\n       \"new jersy\"\r\n    ],\r\n    \"city\":\"California\",\r\n    \"state\":\"CA\"\r\n },\r\n \"identity\":{\r\n    \"given_name\":\"Anuj\",\r\n    \"family_name\":\"Anuj\",\r\n    \"date_of_birth\":\"1993-01-01\",\r\n    \"country_of_tax_residence\":\"USA\",\r\n    \"funding_source\":[\r\n       \"employment_income\"\r\n    ]\r\n },\r\n \"disclosures\":{\r\n    \"is_control_person\":false,\r\n    \"is_affiliated_exchange_or_finra\":false,\r\n    \"is_politically_exposed\":false,\r\n    \"immediate_family_exposed\":false\r\n },\r\n \"agreements\":[\r\n    {\r\n       \"agreement\":\"margin_agreement\"\r\n   \r\n    },\r\n    {\r\n       \"agreement\":\"account_agreement\"\r\n       \r\n    },\r\n    {\r\n       \"agreement\":\"customer_agreement\"\r\n    \r\n    }\r\n ]\r\n}",
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "129",
+    "date": "Thu, 05 Aug 2021 14:24:25 GMT",
+    "connection": "close"
+  },
+  "Response Body": "{\"apiStatus\":\"Failure\",\"message\":\"There is already an existing account registered with the same email address\",\"errorCode\":\"409\"}"
+}
+POST http://localhost:8080/way-stock-rewards/v1/trading/account/buy/order: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63847
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "7804ec68-b726-469a-8bd8-88e1e7a85dd9",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "85"
+  },
+  "Request Body": "{\r\n\"symbol\": \"AAPL\",\r\n\"qty\": \"1\",\r\n\"type\": \"market\",\r\n\"time_in_force\": \"gtc\"\r\n\r\n}\r\n\r\n",
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "506",
+    "date": "Thu, 05 Aug 2021 14:24:39 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully made a buy order\",\"orderDetails\":[{\"id\":\"9a4d498f-29c6-4c6c-9a1b-181ab0417ef9\",\"client_order_id\":\"8e8a42b3-2f5f-4394-b30c-bfd0033ddc60\",\"created_at\":\"2021-08-05T14:24:38.180669Z\",\"updated_at\":\"2021-08-05T14:24:38.180669Z\",\"submitted_at\":\"2021-08-05T14:24:38.099259Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"1\",\"filled_qty\":\"0\",\"type\":\"market\",\"side\":\"buy\",\"time_in_force\":\"gtc\",\"status\":\"accepted\"}]}"
+}
+POST http://localhost:8080/way-stock-rewards/v1/trading/account/buy/order: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63847
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "4056b33f-f463-4bba-806d-de88dcc1bef1",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "107"
+  },
+  "Request Body": "{\r\n\"symbol\": \"AAPL\",\r\n\"qty\": \"1\",\r\n\"type\": \"limit\",\r\n\"time_in_force\": \"gtc\",\r\n\"limit_price\": \"147.91\" \r\n\r\n}",
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "528",
+    "date": "Thu, 05 Aug 2021 14:24:55 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully made a buy order\",\"orderDetails\":[{\"id\":\"cb6cb244-d3b6-43f6-a914-7f3353c56344\",\"client_order_id\":\"12e9d04c-7655-42bc-b7b1-81ec799de74f\",\"created_at\":\"2021-08-05T14:24:54.268296Z\",\"updated_at\":\"2021-08-05T14:24:54.268296Z\",\"submitted_at\":\"2021-08-05T14:24:54.253825Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"1\",\"filled_qty\":\"0\",\"type\":\"limit\",\"side\":\"buy\",\"time_in_force\":\"gtc\",\"limit_price\":\"147.91\",\"status\":\"accepted\"}]}"
+}
+POST http://localhost:8080/way-stock-rewards/v1/trading/account/order/journal: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63847
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "62046a0e-de1f-48ce-b94d-ed116f452e44",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "230"
+  },
+  "Request Body": "{\r\n    \"from_account\": \"9a02ece5-4bfe-38bf-842e-51f713bc7360\",\r\n    \"entry_type\": \"JNLS\",\r\n    \"symbol\": \"AAPL\",\r\n    \"qty\": \"0.1\",\r\n    \"to_account\": \"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\r\n    \"description\": \"Test Journal24\"\r\n}",
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "357",
+    "date": "Thu, 05 Aug 2021 14:25:07 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully made a Journal order\",\"journalOrderDetails\":{\"id\":\"00d15e47-f25b-4ad2-95c8-2b92f386fa2c\",\"entry_type\":\"JNLS\",\"from_account\":\"9a02ece5-4bfe-38bf-842e-51f713bc7360\",\"to_account\":\"2e0ad164-242d-4cde-9f02-5cb480c78ba0\",\"symbol\":\"AAPL\",\"qty\":\"0.1\",\"price\":\"147.15\",\"status\":\"queued\",\"description\":\"Test Journal24\"}}"
+}
+DELETE http://localhost:8080/way-stock-rewards/v1/trading/account/order/sell/AAPL?qty=1: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63847
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "3ff0a04b-169d-4360-901e-974c729c2704",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "508",
+    "date": "Thu, 05 Aug 2021 14:25:23 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully made a sell order\",\"orderDetails\":[{\"id\":\"b39129e9-d801-4f3b-a5ed-13d95add1e04\",\"client_order_id\":\"b5e40be6-2aaa-4acc-a11e-feea6dc040da\",\"created_at\":\"2021-08-05T14:25:21.932419Z\",\"updated_at\":\"2021-08-05T14:25:21.932419Z\",\"submitted_at\":\"2021-08-05T14:25:21.927133Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"1\",\"filled_qty\":\"0\",\"type\":\"market\",\"side\":\"sell\",\"time_in_force\":\"day\",\"status\":\"accepted\"}]}"
+}
+DELETE http://localhost:8080/way-stock-rewards/v1/trading/account/order/sell/AAPL: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 63847
+      },
+      "remote": {
+        "address": "::1",
+        "family": "IPv6",
+        "port": 8080
+      }
+    }
+  },
+  "Request Headers": {
+    "authorization": "Bearer 6d9be1e9-a557-4ce8-b6c3-5c305cbfa3b8",
+    "user-agent": "PostmanRuntime/7.28.2",
+    "accept": "*/*",
+    "postman-token": "ecc263cf-4ccb-4e92-86c7-70f25b119af4",
+    "host": "localhost:8080",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Response Headers": {
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+    "x-frame-options": "DENY",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "510",
+    "date": "Thu, 05 Aug 2021 14:25:47 GMT"
+  },
+  "Response Body": "{\"apiStatus\":\"Success\",\"message\":\"Successfully made a sell order\",\"orderDetails\":[{\"id\":\"4ce67977-c348-4bf7-b453-dd938f4ca186\",\"client_order_id\":\"2c6e86b9-1916-4f23-a3ec-fb38b8844b3b\",\"created_at\":\"2021-08-05T14:25:46.680247Z\",\"updated_at\":\"2021-08-05T14:25:46.680247Z\",\"submitted_at\":\"2021-08-05T14:25:46.674565Z\",\"asset_id\":\"b0b6dd9d-8b9b-48a9-ba46-b9d54906e415\",\"symbol\":\"AAPL\",\"asset_class\":\"us_equity\",\"qty\":\"1.7\",\"filled_qty\":\"0\",\"type\":\"market\",\"side\":\"sell\",\"time_in_force\":\"day\",\"status\":\"accepted\"}]}"
+}

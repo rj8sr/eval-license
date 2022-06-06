@@ -1,0 +1,20 @@
+ssh -L localhost:8082:factory01:8082 -p 22022 rajat@138.197.211.138   for Artifactory tunnel
+
+
+
+ssh -p22022 -N -L 3307:10.138.216.254:3306 rajat@138.197.211.138  for database 
+ username:rajat
+ password:YTRmY2Zj
+
+ arun.krishnan@way.com / 6Gn%F47@^wh@j
+
+ StreamSupport.stream(responseArray.spliterator(), false) // false => not parallel stream
+						.map(JSONObject.class::cast).map(resource -> resource.get(responseJson))
+						.forEach(orderDetailsList::add);
+
+						@Bean
+	public Docket apiDock() {
+		String groupName = "Swagger";
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
+				.paths(PathSelectors.any()).build().groupName(groupName);
+	}
